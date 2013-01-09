@@ -32,8 +32,8 @@ $jsCallsPhpClasses['math'] = '{
 Than, in your html, call JS Calls PHP's engine and one JSCallsPHP.js.php?param=[] for each PHP exposed class. The param name is the key used in jsCallsPHpClasses.
 
 <pre>
-<script type="text/javascript" src="engine.js"></script>
-<script type="text/javascript" src="JSCallsPHP.js.php?param=math"></script>
+script type="text/javascript" src="engine.js"
+script type="text/javascript" src="JSCallsPHP.js.php?param=math"
 </pre>
 
 In the example, the methods add, mul, div and sub from demo/lib/Math.php class are exposed to javascript. To use, is simples:
