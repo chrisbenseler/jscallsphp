@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript" src="../engine.js"></script>
+<script type="text/javascript" src="../JSCallsPHP.js.php?param=math"></script>
+<script type="text/javascript">
+	function add() {
+		math.add(10, 10, function(dataFromServer) {
+			alert(dataFromServer);
+		});
+	}
+	
+	function mul() {
+		math.mul(10, 10, function(dataFromServer) {
+			alert(dataFromServer);
+		});
+	}
+
+	function sub() {
+		math.sub(10, 10, function(dataFromServer) {
+			alert(dataFromServer);
+		});
+	}
+
+	function div() {
+		math.div(10, 10, function(dataFromServer) {
+			alert(dataFromServer);
+		});
+	}
+	
+	
+
+</script>
+</head>
+<body>
+<h1>JS Calls PHP</h1>
+<h2>Exemplode uso - acesso a metodos da classe DebugUtils</h2>
+
+<ul>
+	<li><a href="#" onClick="add(); return false;">adicionar 10 + 10</a></li>
+	<li><a href="#" onClick="mul(); return false;">multiplicar 10 * 10</a></li>
+	<li><a href="#" onClick="sub(); return false;">subtrair 10 - 10</a></li>
+	<li><a href="#" onClick="div(); return false;">dividir 10 / 10</a></li>
+    
+</ul>
+
+</body>
+</html>

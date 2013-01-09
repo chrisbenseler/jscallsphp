@@ -1,0 +1,15 @@
+
+
+/* */
+$bbService = new BlogBlogsService("108101-9568a1022d4de268ae6e43e639836202a209e8a8");
+try {
+	$bbService->setUserName("ChrisB");
+	echo "Meus blogs: <br />";
+	foreach($bbService->user->blogs as $blog) {
+	echo $blog->url . "<br />";
+	}
+} catch(Exception $e) {
+	echo $e;
+}
+
+//echo json_encode($bbService->getBlogByUrl("http://www.chrisb.com.br/blog/"));
